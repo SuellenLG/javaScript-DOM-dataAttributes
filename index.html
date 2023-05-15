@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
     <title>Robotron 2000</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <main>
         <section class="robotron">
-            <img class="robo" src="img/robotron.png" alt="Robotron" id="robotron">
+            <img class="robo" src="img/Robotron 2000 - Azul.png" alt="Robotron" id="robotron">
             <figcaption class="titulo">ROBOTRON <br>2000</figcaption>
         </section>
 
@@ -30,19 +32,19 @@
             <div class="estatistica">
                 <p class="estatistica-titulo">Poder</p>
                 <div class="estatistica-valor">
-                    <p class="estatistica-numero"data-estatistica="poder">630</p>
+                    <p class="estatistica-numero" data-estatistica="poder">630</p>
                 </div>
             </div>
             <div class="estatistica">
                 <p class="estatistica-titulo">Energia</p>
                 <div class="estatistica-valor">
-                    <p class="estatistica-numero"data-estatistica="energia">289</p>
+                    <p class="estatistica-numero" data-estatistica="energia">289</p>
                 </div>
             </div>
             <div class="estatistica">
                 <p class="estatistica-titulo">Velocidade</p>
                 <div class="estatistica-valor">
-                    <p class="estatistica-numero"data-estatistica="velocidade">597</p>
+                    <p class="estatistica-numero" data-estatistica="velocidade">597</p>
                 </div>
             </div>
         </section>
@@ -56,7 +58,7 @@
                             <buttom class="controle-ajuste" data-controle="-" data-peca="bracos">-</buttom>
                             <input type="text" class="controle-contador" value="00" data-contador>
                             <buttom class="controle-ajuste" data-controle="+" data-peca="bracos">+</buttom>
-                        </div>                      
+                        </div>
                     </div>
                     <hr class="linha">
                     <div class="peca">
@@ -98,8 +100,20 @@
                 <input type="submit" value="Iniciar produção" class="producao" id="producao">
             </form>
         </section>
+        <section class="box cor">
+            <label class="cor-titulo">COR</label>
+            <div class="  botaoCor">
+                <button> <img data-cor="Amarelo" src="img/Robotron 2000 - Amarelo.png" alt="Robotron"> </button>
+                <button> <img data-cor="Azul" src="img/Robotron 2000 - Azul.png" alt="Robotron"> </button>
+                <button> <img data-cor="Branco" src="img/Robotron 2000 - Branco.png" alt="Robotron"> </button>
+                <button> <img data-cor="Preto" src="img/Robotron 2000 - Preto.png" alt="Robotron"> </button>
+                <button> <img data-cor="Rosa" src="img/Robotron 2000 - Rosa.png" alt="Robotron"> </button>
+                <button> <img data-cor="Vermelho" src="img/Robotron 2000 - Vermelho.png" alt="Robotron"> </button>
+            </div>
+        </section>
     </main>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>

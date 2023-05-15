@@ -34,6 +34,8 @@ const pecas = {
     }
 }
 
+
+
 controle.forEach((elemento) => {
     elemento.addEventListener("click", (evento) => {
         manipulaDados(evento.target.dataset.controle, evento.target.parentNode);
@@ -55,9 +57,24 @@ function manipulaDados(operacao, controle) {
 function atualizaEstatisticas(peca) {
     estatistica.forEach((elemento) => {
         elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
-        
+
     })
 }
+
+
+const botao = document.querySelectorAll("[data-cor]")
+const robo = document.querySelector('#robotron');
+
+
+botao.forEach((elemento) => {
+    elemento.addEventListener('click', (evento) => {
+        const cor = evento.target.dataset.cor
+        robo.src = "img/Robotron 2000 - " + cor + ".png"
+    })
+})
+
+
+
 
 
 /*
@@ -84,4 +101,7 @@ function atualizaEstatisticas(peca) {
         console.log(elemento.textContent)
 
     })
+
+
 */
+
